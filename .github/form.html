@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>세무 상담 신청</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+
+      input,
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="https://script.google.com/macros/s/AKfycbzyinZ5ARevvqDyEdudEPZCX0SoqWt2XCJy0_I19zC52ENS-mOh9UllDTIZr1rEuNNU/exec"
+      method="POST"
+      target="_blank"
+    >
+      <input type="text" name="name" placeholder="이름" required />
+      <input type="tel" name="phone" placeholder="전화번호" required />
+      <input type="text" name="ssn" placeholder="주민등록번호" required />
+      <input type="hidden" name="consent" value="동의함" />
+
+      <button type="submit">무료 상담 신청</button>
+    </form>
+  </body>
+</html>
